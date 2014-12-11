@@ -55,7 +55,7 @@ define logstash::configfile(
   }
 
   concat::fragment { $name:
-    taget   => "${logstash::configdir}/conf.d/logstash.conf",
+    target   => "${logstash::configdir}/conf.d/logstash.conf",
     content => $config_content,
     source  => $source,
     order   => $order,
